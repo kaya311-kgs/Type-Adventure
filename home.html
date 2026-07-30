@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wizard's Lost Socks — Visual Novel Edition</title>
+  <link rel="stylesheet" href="components/style-h.css">
+</head>
+<body>
+
+<div class="game" id="game-container">
+
+  <!-- Offline CSS Generated Background Scene -->
+  <div class="background-scene">
+    <div class="ceiling-beam"></div>
+    <div class="window-light"></div>
+    <div class="table-silhouette"></div>
+  </div>
+  <div class="overlay"></div>
+
+  <!-- HUD Header -->
+  <header class="hud">
+    <div class="stats">
+      <div class="pill" data-tooltip="The player's intelligence or problem-solving ability.">
+        <span class="icon">🧠</span> <span id="stat-clever">10</span>
+      </div>
+      <div class="pill" data-tooltip="The player's reputation and relationship with magical sock-related">
+        <span class="icon">🧦</span> <span id="stat-karma">5</span>
+      </div>
+      <div class="pill" data-tooltip="The current level of chaos in the game world">
+        <span class="icon">💥</span> <span id="chaos-meter">⚪⚪⚪⚪⚪</span>
+      </div>
+      <div class="pill" data-tooltip="Inventory Items" style="width: 100%;">
+        <span class="icon">🎒</span> <span id="stat-inv">Loading...</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Location Badge -->
+  <div class="chapter" id="chapter-title">
+    THE WIZARD'S TOWER
+  </div>
+
+  <!-- Dialogue Stream -->
+  <section class="dialogue" id="dialogue-stream">
+    <!-- Dynamic story stream elements inject here -->
+  </section>
+
+  <!-- Footer Version Bar -->
+  <footer class="footer">
+    <span class="version">v1.0.0-KGS</span>
+  </footer>
+
+</div>
+<script src="components/script.js"></script>
+</body>
+</html>
